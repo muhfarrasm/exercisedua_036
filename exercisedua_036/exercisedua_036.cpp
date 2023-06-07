@@ -23,16 +23,35 @@ class lingkaran : public bidangDatar {
 public:
 	void input() {
 		int r;
-		cout << "Masukkan jari-jari: ";
+		cout << "Masukkan jejari: ";
 		cin >> r;
 		setX(r);
 	}
 
-	float Luas(int r) {
+	float LuasL(int r) {
 		return 3.14 * r * r;
 	}
 
-	float Keliling(int r) {
+	float KelilingL(int r) {
+		return 2 * 3.14 * r;
+	}
+};
+
+
+class Bujursangkar : public bidangDatar {
+public:
+	void input() {
+		int s;
+		cout << "Masukkan Sisinya : ";
+		cin >> s;
+		setX(s);
+	}
+
+	float LuasBS(int r) {
+		return 3.14 * r * r;
+	}
+
+	float KelilingBS(int r) {
 		return 2 * 3.14 * r;
 	}
 };
