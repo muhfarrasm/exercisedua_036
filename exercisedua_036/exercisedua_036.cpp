@@ -25,7 +25,7 @@ public:
 		int r;
 		cout << "Masukkan jejari: ";
 		cin >> r;
-		setX(r);
+		setX(r);//Mengeset atau mengisi variable X dengan r
 	}
 
 	float LuasL(int r) {
@@ -44,7 +44,7 @@ public:
 		int s;
 		cout << "Masukkan Sisinya : ";
 		cin >> s;
-		setX(s);
+		setX(s); // Mengeset atau mengisi variable X dengan s
 	}
 
 	float LuasBS(int r) {
@@ -55,3 +55,19 @@ public:
 		return 2 * 3.14 * r;
 	}
 };
+
+int main()
+{
+	bidangDatar* BD;
+
+	cout << "Lingkaran Dibuat ";
+	BD = new lingkaran();
+	BD->input();
+	int r = BD->getX();
+	cout << "Luas Lingkaran = " << BD->Luas(r) << endl;
+	cout << "Keliling Lingkaran = " << BD->Keliling(r) << endl;
+
+
+	
+
+}
