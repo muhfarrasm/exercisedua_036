@@ -19,9 +19,9 @@ public:
 	}
 };
 
-class lingkaran : public bidangDatar {
+class lingkaran : public bidangDatar { 
 public:
-	void input() {
+	void inputL() {
 		int r;
 		cout << "Masukkan jejari: ";
 		cin >> r;
@@ -40,7 +40,7 @@ public:
 
 class bujursangkar : public bidangDatar {
 public:
-	void input() {
+	void inputBS() {
 		int s;
 		cout << "Masukkan Sisinya : ";
 		cin >> s;
@@ -56,10 +56,11 @@ public:
 	}
 };
 
-int main()
+int main()//program utama
 {
 	bidangDatar* BD;
 
+	//Bagian Dari Lingkaran
 	cout << "Lingkaran Dibuat ";
 	BD = new lingkaran();
 	BD->input();
@@ -67,12 +68,13 @@ int main()
 	cout << "Luas Lingkaran = " << BD->Luas(r) << endl;
 	cout << "Keliling Lingkaran = " << BD->Keliling(r) << endl;
 
-	cout << "\nBujursangkar Dibuat ";
-	BD = new bujursangkar();
+	//Bagian Dari Bujursangkar
+	cout << "Bujursangkar Dibuat";
+	BD = new lingkaran();
 	BD->input();
 	int s = BD->getX();
 	cout << "Luas Lingkaran = " << BD->Luas(s) << endl;
 	cout << "Keliling Lingkaran = " << BD->Keliling(s) << endl;
-	
 
+	return 0;
 }
