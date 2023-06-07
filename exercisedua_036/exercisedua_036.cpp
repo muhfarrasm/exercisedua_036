@@ -38,7 +38,7 @@ public:
 };
 
 
-class Bujursangkar : public bidangDatar {
+class bujursangkar : public bidangDatar {
 public:
 	void input() {
 		int s;
@@ -67,7 +67,12 @@ int main()
 	cout << "Luas Lingkaran = " << BD->Luas(r) << endl;
 	cout << "Keliling Lingkaran = " << BD->Keliling(r) << endl;
 
-
+	cout << "\nBujursangkar Dibuat ";
+	BD = new bujursangkar();
+	BD->input();
+	int s = BD->getX();
+	cout << "Luas Lingkaran = " << BD->Luas(s) << endl;
+	cout << "Keliling Lingkaran = " << BD->Keliling(s) << endl;
 	
 
 }
