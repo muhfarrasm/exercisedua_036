@@ -1,5 +1,7 @@
 #include <iostream>
-using namespace std;class bidangDatar {
+using namespace std;
+
+class bidangDatar {
 private:
 	int x; //variabel untuk menyimpan input dari lingkaran maupun bujursangkar
 public:
@@ -17,3 +19,20 @@ public:
 	}
 };
 
+class lingkaran : public bidangDatar {
+public:
+	void input() {
+		int r;
+		cout << "Masukkan jari-jari: ";
+		cin >> r;
+		setX(r);
+	}
+
+	float Luas(int r) {
+		return 3.14 * r * r;
+	}
+
+	float Keliling(int r) {
+		return 2 * 3.14 * r;
+	}
+};
