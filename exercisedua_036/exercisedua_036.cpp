@@ -19,7 +19,7 @@ public:
     }
 };
 
-class lingkaran : public bidangdatar {
+class lingkaran : public bidangdatar {//Mendeklarasikan class lingkaran itu member dari bidang datar
 public:
     void input() {
         int r;
@@ -37,7 +37,7 @@ public:
     }
 };
 
-class bujursangkar : public bidangdatar {
+class bujursangkar : public bidangdatar {//Mendeklarasikan class bujursangkar itu member dari bidang datar
 public:
     void input() {
         int s;
